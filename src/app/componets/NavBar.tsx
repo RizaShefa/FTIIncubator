@@ -121,19 +121,7 @@ const NavItem: React.FC<{
     ? 'block py-3 text-lg w-full text-left' 
     : '';
 
-  // If we're on the home page, use button for potential scrolling
-  // if (pathname === '/' && document.getElementById(item.id)) {
-  //   return (
-  //     <button
-  //       onClick={() => onNavigation(item)}
-  //       className={`${baseClasses} ${mobileClasses}`}
-  //     >
-  //       {item.label}
-  //     </button>
-  //   );
-  // }
-
-  // Otherwise, use Link for page navigation
+  
   return (
     <Link
       href={item.href}
