@@ -15,7 +15,6 @@ export const useSuccessStories = () => {
 
         const data = await response.json()
         setStories(data || [])
-        console.log(data,"rerers");
         
       } catch (err) {
         setError(err instanceof Error ? err.message : 'An error occurred')

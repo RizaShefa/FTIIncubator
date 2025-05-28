@@ -14,10 +14,7 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ params }) => {
 
   const resolvedParams = use(params);
   
-  // Debug logs to see what's happening
-  console.log('Resolved params:', resolvedParams);
-  console.log('Looking for ID:', resolvedParams.id);
-  console.log('Available stories:', stories.map(s => ({ id: s.id, name: s.name })));
+;
 
   if (isLoading) {
     return (
@@ -49,7 +46,6 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ params }) => {
   // THE KEY FIX: Convert both to strings for comparison
   const project = stories.find(story => String(story.id) === String(resolvedParams.id));
   
-  console.log('Found project:', project ? project.name : 'NOT FOUND');
 
   if (!project) {
     return (
