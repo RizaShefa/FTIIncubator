@@ -14,6 +14,10 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ params }) => {
 
   const resolvedParams = use(params);
   
+  // Debug logs to see what's happening
+  console.log('Resolved params:', resolvedParams);
+  console.log('Looking for ID:', resolvedParams.id);
+  console.log('Available stories:', stories.map(s => ({ id: s.id, name: s.name })));
 
   if (isLoading) {
     return (
@@ -42,10 +46,10 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ params }) => {
     );
   }
 
-
-  const project = stories.find(story => story.id === resolvedParams.id);
+  // THE KEY FIX: Convert both to strings for comparison
+  const project = stories.find(story => String(story.id) === String(resolvedParams.id));
   
-  
+  console.log('Found project:', project ? project.name : 'NOT FOUND');
 
   if (!project) {
     return (
@@ -55,7 +59,12 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ params }) => {
             <Building2 className="w-12 h-12 text-slate-400" />
           </div>
           <h2 className="text-2xl font-bold text-slate-800 mb-2">Projekti nuk u gjet</h2>
-          <p className="text-slate-600 mb-6">Projekti që kërkuat (ID: {resolvedParams.id}) nuk ekziston ose është hequr.</p>
+          <p className="text-slate-600 mb-6">
+            Projekti që kërkuat (ID: {resolvedParams.id}) nuk ekziston ose është hequr.
+          </p>
+          <p className="text-sm text-slate-500 mb-4">
+            Debug: Available IDs are {stories.map(s => s.id).join(', ')}
+          </p>
           <button
             onClick={() => router.push('/projects')}
             className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
@@ -68,12 +77,12 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ params }) => {
   }
 
   const handleBack = () => {
-    router.push('/projects'); // Updated to correct path
+    router.push('/projects');
   };
 
   // Get related projects (same type, different project)
   const relatedProjects = stories
-    .filter(story => story.type === project.type && story.id !== project.id)
+    .filter(story => story.type === project.type && String(story.id) !== String(project.id))
     .slice(0, 3);
 
   return (
@@ -257,17 +266,6 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ params }) => {
                 </button>
               </div>
             </div>
-
-            {/* Contact Card */}
-            {/* <div className="bg-gradient-to-br from-blue-600 to-cyan-600 rounded-2xl p-8 text-white">
-              <h3 className="text-xl font-bold mb-4">Interesuar për Bashkëpunim?</h3>
-              <p className="mb-6 opacity-90">
-                Kontaktoni ekipin tonë për të mësuar më shumë rreth mundësive të bashkëpunimit me {project.name}.
-              </p>
-              <button className="w-full bg-white text-blue-600 py-3 px-6 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-                Kontakto Tani
-              </button>
-            </div> */}
           </div>
         </div>
       </div>
