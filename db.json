@@ -34,7 +34,19 @@
       "sponsors": 4,
       "funding": "EU for Innovation, Qeveria Gjermane, Qeveria Suedeze"
     }
-
-  
+  ],
+  "fundingOpportunities": [
+    {
+      "id": 1,
+      "name": "European Innovation Council (EIC) Accelerator",
+      "organizer": "Bashkimi Evropian",
+      "program": "Horizon Europe",
+      "maxFunding": "2.5M euro (grant) + 10-15M euro (investment)",
+      "deadline": "1 tetor 2025",
+      "eligibility": "Startup-e, NVM, ekipe themeluese nga BE + vendet e asociuara (përfshirë Shqipërinë)",
+      "description": "Mbështet startup-e dhe NVM me ide inovatore dhe potencial të lartë rritjeje",
+      "website": "EIC Accelerator – Faqja zyrtare",
+      "type": "Grant + Investment"
+    }
   ]
 }
