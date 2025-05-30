@@ -29,10 +29,93 @@
         "Fakulteti i Ekonomisë - Universiteti i Tiranës"
       ],
       "programDuration": "100+ ditë",
-      "mentors": 25,
-      "supportingOrgs": 15,
-      "sponsors": 4,
-      "funding": "EU for Innovation, Qeveria Gjermane, Qeveria Suedeze"
+      "mentors": "25",
+      "supportingOrgs": "15",
+      "sponsors": "4",
+      "funding": ""
+    },
+
+  {
+      "id": 2,
+      "name": "Metropolitan Incubator (METINC)",
+      "country": "Shqipëri",
+      "foundedYear": 2020,
+      "type": "On Campus Incubator",
+      "description": "Inkubatori i parë 'On Campus' në rrethin e universiteteve shqiptare",
+      "university": "Universiteti Metropolitan i Tiranës",
+      "programs": ["IDEA", "Accelerator"],
+      "startupsSupported": 20,
+      "currentStartups": 12,
+      "services": [
+        "Mentorim nga ekspertë",
+        "Mbështetje teknike dhe këshillim akademik",
+        "Co-working spaces",
+        "Akses në programe kombëtare dhe ndërkombëtare të financimit"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "SETsquared",
+      "country": "Mbretëria e Bashkuar",
+      "foundedYear": 2002,
+      "type": "University Partnership",
+      "description": "Një nga partneritetet më të suksesshme të ndërmarrësisë universitare në botë",
+      "universities": [
+        "University of Bath",
+        "University of Bristol",
+        "Cardiff University",
+        "University of Exeter",
+        "University of Southampton",
+        "University of Surrey"
+      ],
+      "businessesSupported": 5000,
+      "investmentSecured": "5+ miliardë £",
+      "ranking": "Ndër më të mirët në botë nga UBI Global"
+    },
+    {
+      "id": 4,
+      "name": "IPN Incubator",
+      "country": "Portugali",
+      "foundedYear": 2002,
+      "type": "Private Non-Profit",
+      "description": "Institucion privat jofitimprurës i krijuar me iniciativën e Institutit Pedro Nunes dhe Universitetit të Coimbrës",
+      "university": "Universiteti i Coimbrës",
+      "focus": "Spin-off projects nga universiteti",
+      "services": [
+        "Trajnime teknike dhe menaxheriale",
+        "Mentorim profesional",
+        "Akses në tregjet kombëtare dhe ndërkombëtare",
+        "Infrastrukturë moderne"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "ACEin",
+      "country": "Greqi",
+      "foundedYear": 2015,
+      "type": "University Innovation Center",
+      "description": "Qendra e Sipërmarrjes dhe Inovacionit të Athinës",
+      "university": "Universiteti i Ekonomisë dhe Biznesit të Athinës",
+      "focus": [
+        "Studentë dhe kërkues shkencorë",
+        "Komercializimi i kërkimit shkencor",
+        "Proof of Concept projects"
+      ],
+      "methodology": "Proces i strukturuar nga ideja në zbatim"
+    },
+    {
+      "id": 6,
+      "name": "Aaltoes",
+      "country": "Finlandë",
+      "foundedYear": 2009,
+      "type": "Student-led Organization",
+      "description": "Organizatë jofitimprurëse e drejtuar nga studentët - motori që ndezi kulturën e startup-eve në Finlandë",
+      "university": "Aalto University",
+      "programs": ["Startup Sauna", "Summer of Startups", "Kiuas Accelerator"],
+      "eventsPerYear": 100,
+      "participants": 10000,
+      "annualBudget": "500,000-800,000 euro",
+      "workspace": "1500 m² në kampusin e Otaniemit"
     }
   ],
   "fundingOpportunities": [
@@ -47,6 +130,90 @@
       "description": "Mbështet startup-e dhe NVM me ide inovatore dhe potencial të lartë rritjeje",
       "website": "EIC Accelerator – Faqja zyrtare",
       "type": "Grant + Investment"
+    },
+    {
+      "id": 2,
+      "name": "EIT Digital Venture Program 2025",
+      "organizer": "EIT Digital",
+      "maxFunding": "5,000 euro + mentorim",
+      "deadline": "8 qershor 2025",
+      "eligibility": "Individë/ekipe me ide në teknologji dixhitale (përfshirë Shqipërinë)",
+      "description": "Program inkubimi dhe para-akselerimi për teknologji dixhitale",
+      "phases": [
+        "SpeedLauncher - 12 javë trajnim",
+        "Para-akselerim - 12 javë + 5,000 euro grant"
+      ],
+      "equity": "3% aksione për EIT Digital",
+      "website": "https://www.eitdigital.eu/venture-incubation-program/",
+      "type": "Incubation Program"
+    },
+    {
+      "id": 3,
+      "name": "EIT Food – Empowering Women in Agrifood (EWA) 2025",
+      "organizer": "EIT Food",
+      "maxFunding": "12,000 euro",
+      "deadline": "25 maj 2025",
+      "eligibility": "Gra mbi 18 vjeç me ide në agro-ushqimor (përfshirë Shqipërinë)",
+      "description": "Program akselerator 6-mujor për gra sipërmarrëse në sektorin agro-ushqimor",
+      "participants": 130,
+      "regions": ["Evropa Jugore", "Veriore", "Lindore"],
+      "website": "https://www.eitfood.eu/open-calls/empowering-women-in-agrifood-ewa-programme-2025-call-for-female-entrepreneurs",
+      "type": "Accelerator Program"
+    },
+    {
+      "id": 4,
+      "name": "UNICEF Venture Fund",
+      "organizer": "UNICEF",
+      "maxFunding": "100,000 dollarë",
+      "deadline": "Thirrje periodike",
+      "eligibility": "Startup-e teknologjike nga vendet programore të UNICEF (përfshirë Shqipërinë)",
+      "description": "Fond global për startup-e që zhvillojnë teknologji për të përmirësuar jetën e fëmijëve",
+      "requirements": [
+        "Prototip funksional",
+        "Open-source licensing",
+        "Fokus në teknologji për fëmijë"
+      ],
+      "technologies": ["AI", "Blockchain", "AR", "Drone", "Digital solutions"],
+      "website": "https://www.unicef.org/innovation/venturefund",
+      "type": "Innovation Fund"
+    },
+    {
+      "id": 5,
+      "name": "Global Innovation Fund (GIF)",
+      "organizer": "GIF",
+      "maxFunding": "230,000 dollarë (pilot) + miliona për zgjerim",
+      "deadline": "Thirrje e re pritet gjatë vitit",
+      "eligibility": "Kushdo nga çdo vend (përfshirë Shqipërinë)",
+      "description": "Fond ndërkombëtar për zgjidhje inovative që përmirësojnë jetën në vendet në zhvillim",
+      "focus": ["Reduktimi i varfërisë", "Arsimi", "Shëndetësia", "Mjedisi", "Qeverisja"],
+      "website": "https://www.globalinnovation.fund/apply-for-funding",
+      "type": "Social Innovation Fund"
+    },
+    {
+      "id": 6,
+      "name": "Entrepreneurship World Cup 2025",
+      "organizer": "GEN + Fondacioni Misk",
+      "maxFunding": "500,000 dollarë + 75M dollarë shërbime",
+      "deadline": "30 qershor 2025",
+      "eligibility": "Individë/ekipe me ide biznesi, startup-e deri në 10 vjet",
+      "description": "Një nga garat më të mëdha ndërkombëtare për startup-e",
+      "categories": ["Ide", "Fazë e hershme", "Fazë rritjeje"],
+      "totalPrizes": "1+ milion dollarë",
+      "website": "https://platform.entrepreneurshipworldcup.com",
+      "type": "Competition"
+    },
+    {
+      "id": 7,
+      "name": "Green Business Competition 2025",
+      "organizer": "Partners Albania + Rockefeller Brothers Fund",
+      "maxFunding": "1,000,000 lekë (~8,700 euro)",
+      "deadline": "23 qershor 2025",
+      "eligibility": "Biznese të vogla të regjistruara në Shqipëri (pre-seed, deri në 3 vjet)",
+      "description": "Thirrje kombëtare për startup-e me ide të gjelbra dhe inovative",
+      "focus": ["Ekonomia e gjelbër", "Energjia e pastër", "Qëndrueshmëria"],
+      "duration": "6-9 muaj",
+      "website": "https://albaniatech.org/the-green-business-competition-2025/",
+      "type": "Green Innovation Fund"
     }
   ]
 }

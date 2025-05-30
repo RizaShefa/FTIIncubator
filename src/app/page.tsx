@@ -4,36 +4,36 @@ import { Lightbulb, Users, Zap, BookOpen, Briefcase, Globe, TrendingUp, Award, M
 import ContactForm from './componets/ContactDataForm';
 import Navigation from './componets/NavBar';
 
-interface CounterProps {
-  end: number;
-  duration?: number;
-}
+// interface CounterProps {
+//   end: number;
+//   duration?: number;
+// }
 
-const Counter: React.FC<CounterProps> = ({ end, duration = 2000 }) => {
-  const [count, setCount] = useState(0);
+// const Counter: React.FC<CounterProps> = ({ end, duration = 2000 }) => {
+//   const [count, setCount] = useState(0);
   
-  useEffect(() => {
-    let startTime: number;
-    let animationFrame: number;
+//   useEffect(() => {
+//     let startTime: number;
+//     let animationFrame: number;
     
-    const animate = (currentTime: number) => {
-      if (!startTime) startTime = currentTime;
-      const progress = Math.min((currentTime - startTime) / duration, 1);
+//     const animate = (currentTime: number) => {
+//       if (!startTime) startTime = currentTime;
+//       const progress = Math.min((currentTime - startTime) / duration, 1);
       
-      setCount(Math.floor(progress * end));
+//       setCount(Math.floor(progress * end));
       
-      if (progress < 1) {
-        animationFrame = requestAnimationFrame(animate);
-      }
-    };
+//       if (progress < 1) {
+//         animationFrame = requestAnimationFrame(animate);
+//       }
+//     };
     
-    animationFrame = requestAnimationFrame(animate);
+//     animationFrame = requestAnimationFrame(animate);
     
-    return () => cancelAnimationFrame(animationFrame);
-  }, [end, duration]);
+//     return () => cancelAnimationFrame(animationFrame);
+//   }, [end, duration]);
   
-  return <span>{count}</span>;
-};
+//   return <span>{count}</span>;
+// };
 
 const FTIIncubator: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -277,7 +277,7 @@ const FTIIncubator: React.FC = () => {
       </section>
       
       {/* Statistics Section */}
-      <section className="py-20 bg-white">
+      {/* <section className="py-20 bg-white">
         <div className="container mx-auto px-6">
           <div className="grid md:grid-cols-4 gap-8 text-center">
             {[
@@ -295,7 +295,7 @@ const FTIIncubator: React.FC = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
       
       {/* Contact Section */}
       <section id="contact" className="py-20 bg-slate-900 text-white">

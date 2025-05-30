@@ -160,7 +160,7 @@ const ProjectsPage: React.FC = () => {
                   {story.description}
                 </p>
 
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+                {/* <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
                   <div className="text-center p-3 bg-blue-50 rounded-lg">
                     <Users className="w-5 h-5 text-blue-600 mx-auto mb-1" />
                     <div className="text-lg font-bold text-slate-800">{story.mentors}</div>
@@ -181,14 +181,14 @@ const ProjectsPage: React.FC = () => {
                     <div className="text-xs font-bold text-slate-800">{story.funding}</div>
                     <div className="text-xs text-slate-600">Financim</div>
                   </div>
-                </div>
+                </div> */}
 
-                <div className="flex items-center justify-between">
+                {/* <div className="flex items-center justify-between">
                   <div className="text-sm text-slate-500">
                     Kohëzgjatja: {story.programDuration}
                   </div>
                   <ArrowRight className="w-5 h-5 text-blue-600 group-hover:translate-x-1 transition-transform" />
-                </div>
+                </div> */}
               </div>
             </div>
           ))}

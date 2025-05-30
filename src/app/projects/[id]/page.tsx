@@ -203,7 +203,7 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ params }) => {
                     <Users className="w-6 h-6 text-blue-600" />
                   </div>
                   <div>
-                    <div className="text-2xl font-bold text-slate-800">{project.mentors || 0}</div>
+                    <div className="text-2xl font-bold text-slate-800">{project.mentors || 'N/A'}</div>
                     <div className="text-sm text-slate-600">Mentorë Aktivë</div>
                   </div>
                 </div>
@@ -213,7 +213,7 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ params }) => {
                     <Building2 className="w-6 h-6 text-green-600" />
                   </div>
                   <div>
-                    <div className="text-2xl font-bold text-slate-800">{project.supportingOrgs || 0}</div>
+                    <div className="text-2xl font-bold text-slate-800">{project.supportingOrgs || 'N/A'}</div>
                     <div className="text-sm text-slate-600">Organizata Mbështetëse</div>
                   </div>
                 </div>
@@ -223,7 +223,7 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ params }) => {
                     <Award className="w-6 h-6 text-purple-600" />
                   </div>
                   <div>
-                    <div className="text-2xl font-bold text-slate-800">{project.sponsors || 0}</div>
+                    <div className="text-2xl font-bold text-slate-800">{project.sponsors || 'N/A'}</div>
                     <div className="text-sm text-slate-600">Sponsorë</div>
                   </div>
                 </div>
